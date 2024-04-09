@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import page from '../login/page';
+
 const page = () => {
 const router = useRouter();
 
@@ -29,7 +29,7 @@ const handleSubmit = async (e)=>{
 };
 	return (
 		<div>
-			<page/>
+			
 			<form onSubmit={handleSubmit}>
 				<input onChange={(e)=>{handleChange('email',e.target.value)}} placeholder='email'/>
 				<br/>
